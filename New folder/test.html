@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+        <title>HOME</title>
+
+    </head>
+
+    <body>
+    <section id="heure">
+    </section>
+
+                <script>
+   alert("test");
+        setInterval(function(){
+    var heure    = new Date();
+    var uminute = heure.getMinutes();
+    var useconde = heure.getSeconds();
+    var uheure = heure.getHours();
+    document.getElementById('heure').innerHTML=uheure + ":" + uminute + ":" + useconde;}, 1);
+
+    </script>
+    </body>
+
+</html>
