@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Nyrsko, KrySoar">
+
+    <title>Accueil</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/css/unslider.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.3.1/vegas.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/theme/Justice/css/justice.css?1484771973" />		
+	
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>	
+<style>
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+/*----CSS a moi----*/
+#titre{
+
+position:relative;
+height:100px;
+width:auto;
+padding:10px 0 0 0;
+float:right;
+color:#333;
+}
+
+img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+
+
+#navBar {
+background-image:url("http://weststreetwillyseatery.com/wp-content/uploads/2016/02/Grey-Radial-Gradient-Background-10.jpg");
+box-shadow: 0 0 20px rgb(0,0,0,0.9);
+position:relative;
+height:100px;
+width:auto;
+padding:10px 0 0 0;
+color:#c8dee3;
+}
+.navMenu {
+list-style:none;
+height:20px;
+}
+.navMenu a:hover {
+list-style:none;
+color:#333;
+}
+.navItem a,a:visited {
+float:right;
+text-decoration:none;
+color:#c8dee3;
+padding: 0px 16px;
+}
+.navItem a:hover {
+text-decoration:none;
+font-color:white;
+}
+.navTitle {
+color:#c8dee3;
+}
+.navItem{
+color:#c8dee3;
+float:left;
+}
+
+{
+clear:both;
+display:flex;
+justify-content:center;
+}
+#left
+{
+display:flex;
+flex-direction:column;
+}
+#right
+{
+display:flex;
+flex-direction:column;
+}
+.panelL
+{
+height:300px;
+width:500px;
+margin:20px;
+background:white;
+border-radius:5px;
+border:solid 1px #bbb;
+//box-shadow: inset 0 0  10px rgba(0,0,0,0.7);
+}
+.panelR
+{
+height:220px;
+width:450px;
+margin:20px;
+background-image:url("https://image.noelshack.com/fichiers/2017/43/5/1509095365-test.png");
+border-radius:2px;
+border:solid 1px #bbb;
+//box-shadow: inset 0 0  10px rgba(0,0,0,0.7);
+}
+.panLTitle{
+position:relative;
+height:20px;
+width:500px;
+background-image:url("https://image.noelshack.com/fichiers/2017/43/5/1509095365-test.png");
+border-radius:5px 5px 0 0;
+}
+.panLContent{
+position:relative;
+bottom:0px;
+left:-1px;
+height:257px;
+width:500px;
+border:solid 1px #bbb;
+background-image:url("https://image.noelshack.com/fichiers/2017/43/5/1509095365-test.png");
+}
+.panLBottom{
+position:relative;
+bottom:0px;
+height:20px;
+width:500px;
+background-image:url("https://image.noelshack.com/fichiers/2017/43/5/1509095365-test.png");
+border-radius:0 0 0px 0px;
+}
+
+
+
+
+http://image.noelshack.com/fichiers/2017/12/1490043144-img-8f84-eb1f.jpg
+
+
+
+
+
+</style>
+
+</head> 
+
+
+
+
+<body>
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+       <body background="https://image.noelshack.com/fichiers/2017/43/5/1509095365-test.png">     
+     <div id="navBar">
+<ul class="navMenu">
+<li ID="titre"<a href="#" style="font-size:80px;line-height:40px;"><FONT color="grey"><font face="Mona Shark">KobraLost</a></li></font></FONT>
+<li class="navItem">
+<a href="#" style="font-size:20px;line-height:20px"><FONT color="orange"><font face="Bubblegum">Accueil</a></FONT></font>
+</li>
+<li class="navItem">
+<a href="#" style="font-size:20px;line-height:20px"><FONT color="orange">Rejoindre l'equipe </a></FONT>
+</li>
+<li class="navItem">
+<a href="#" style="font-size:20px;line-height:20px" ><FONT color="orange">Nos Equipes</a></FONT>
+<li class="navItem">
+<a href="#" style="font-size:20px;line-height:20px"><FONT color="orange">Information</a></FONT>
+</li>
+<a href="#" style="font-size:2àpx;line-height:20px><FONT color=red">Steam</a></FRONT>
+</li>
+</ul>
+
+
+<img src="http://www.team-exodia.fr/assets/img/games/game_11/screenshots/568ba0198964d.jpg" alt="Gmod" style="width:340px">
+<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwjYyNO2vpDXAhXEuBoKHUmDBoYQjRwIBw&url=http%3A%2F%2Fwhistle.guildwork.com%2Fforum%2Fthreads%2F56623502002aa8628fa28ca3-whistle-steam-group&psig=AOvVaw0ykZj-y0LWcAQUwjD_B-Fh&ust=1509182865849216" alt="Steam" style="width:500">
+
+</div>
+</body>
+
+</html>
